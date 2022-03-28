@@ -191,6 +191,29 @@ form button {
 .step h3 {
   color: #024e76;
   font-size: 46px;
+  flex: 1 30%;
+}
+
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Image box is always 12% of the text box's size */
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-img img {
+  max-width: 100%;
+}
+
+/* The text box always gets 12 times more space in the container than the image */
+.step-text {
+  flex: 12;
 }
 
 .step-text p {
