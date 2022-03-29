@@ -1,15 +1,16 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   color: #39a6b2;
-  font-family: Helvetica, Arial sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-/* appl styles to header */
+/* HEADER / NAV BAR STYLES START */
+
 header {
   padding: 20px 35px;
   background-color: #39a6b2;
@@ -20,9 +21,9 @@ header {
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
 }
 
 header a {
@@ -45,46 +46,50 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  /* vw stands for viewport width - it makes the font size adjust depending on the size of our viewport */
   font-size: 1.55vw;
 }
 
+/* HEADER / NAVBAR STYLES END */
+
+/* FOOTER STYLES START */
 footer {
   background: #fce138;
-  width: 100%;
   padding: 40px 35px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 footer h2 {
   color: #024e76;
   font-size: 30px;
   margin: 0;
-  text-align: right;
 }
 
 footer div {
   line-height: 1.5;
+  text-align: right;
 }
 
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-/* Homepage Hero Style Start */
+/* HERO STYLES START */
 .hero {
-  background-image: url(../images/flipped-hero-image.jpeg);
+  background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: flex-start;
 }
 
@@ -98,16 +103,16 @@ section {
 }
 
 .hero-cta h2 {
-  color: #fce138;
-  font-size: 55px;
   font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 
 .hero-form {
+  border: 3px solid #024e76;
   background-color: #fce138;
-  color: #024e76;
   padding: 20px;
-  border: solid 3px #024e76;
+  color: #024e76;
   width: 40%;
   margin: 3.5%;
 }
@@ -116,7 +121,6 @@ section {
   font-size: 24px;
   margin: 0;
 }
-
 .hero-form p {
   margin: 5px 0 15px 0;
 }
@@ -135,46 +139,20 @@ section {
   margin: 0 5px;
 }
 
-form button {
-  background-color: #024e76;
+.hero-form button {
   color: #fce138;
-  font-size: 16px;
-  padding: 10px 20px;
+  background-color: #024e76;
   border: none;
+  padding: 10px 20px;
+  font-size: 16px;
 }
 /* HERO STYLES END */
 
-/* What We Do Start */
-.intro p {
-  line-height: 1.7;
-  color: #39a6b2;
-  width: 80%;
-  font-size: 20px;
-  margin: 0 auto;
-  text-align: center;
-}
-/* What We Do End */
-
-/* What You Do Start */
-.step {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid #39a6b2;
-  display: flex;
-  flex-wrap: wrapa;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.steps {
-  background: #fce138;
-}
-
+/* SECTION TITLE STYLES START */
 .section-title {
   font-size: 48px;
-  color: #024e76;
   border-bottom: 3px solid;
+  color: #024e76;
   padding-bottom: 20px;
   text-align: center;
   margin: 0 auto 35px auto;
@@ -187,6 +165,35 @@ form button {
 
 .secondary-border {
   border-color: #39a6b2;
+}
+/* SECTION TITLE STYLES END */
+
+/* WHAT WE DO STYLES */
+
+.intro p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+}
+/* WHAT YOU DO STYLES END */
+
+/* WHAT YOU DO STYLES START */
+.steps {
+  background: #fce138;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .step h3 {
@@ -202,7 +209,6 @@ form button {
   align-items: center;
 }
 
-/* Image box is always 12% of the text box's size */
 .step-img {
   flex: 1 12%;
   margin-right: 20px;
@@ -212,7 +218,6 @@ form button {
   max-width: 100%;
 }
 
-/* The text box always gets 12 times more space in the container than the image */
 .step-text {
   flex: 12;
 }
@@ -227,9 +232,10 @@ form button {
   line-height: 1.5;
   color: #024e76;
 }
-/* What You Do End */
 
-/* Trainers Start */
+/* WHAT YOU DO STYLES END */
+
+/* MEET THE TRAINERS START */
 .trainers {
   width: 100%;
   margin: 0 auto;
@@ -240,9 +246,9 @@ form button {
 
 .trainer {
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1;
 }
 
 .trainer img {
@@ -267,11 +273,15 @@ form button {
 .trainer-bio p {
   font-size: 17px;
 }
-/* Trainers End */
+/* TRAINER STYLES END */
 
-/* Reach Out Start */
+/* REACH OUT STYLES START */
 .contact {
-  background-color: #024e76;
+  background: #024e76;
+}
+
+.contact h2 {
+  color: #fce138;
 }
 
 .contact-info {
@@ -283,10 +293,6 @@ form button {
 .contact-info > * {
   flex: 1;
   margin: 15px;
-}
-
-.contact h2 {
-  color: #fce138;
 }
 
 .contact-info iframe {
@@ -306,12 +312,8 @@ form button {
 .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
-}
-
-.contact-info a {
-  color: #fce138;
 }
 
 .contact-form input,
@@ -336,7 +338,13 @@ form button {
   font-size: 16px;
 }
 
-/* Utility Classes */
+.contact-info a {
+  color: #fce138;
+}
+
+/* REACH OUT STYLES END */
+
+/* UTILITIES */
 .text-left {
   text-align: left;
 }
@@ -351,4 +359,111 @@ form button {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  footer h2,
+  footer div {
+    text-align: center;
+    width: 100%;
+  }
+
+  .hero-cta,
+  .hero-form {
+    width: 100%;
+  }
+
+  .hero-cta {
+    text-align: center;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+
+  .trainer {
+    flex: 0 70%;
+  }
+
+  .contact-info iframe {
+    flex: 1 100%;
+  }
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 30px 15px;
+  }
+
+  .step h3 {
+    flex: 1 100%;
+    text-align: center;
+  }
+
+  .step-info {
+    flex: 2 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .step-img {
+    flex: 0 32%;
+    margin-right: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .step-text {
+    flex: 100%;
+  }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  .hero-form button {
+    width: 100%;
+  }
+
+  .section-title {
+    width: 95%;
+  }
+
+  .intro p {
+    width: 100%;
+  }
+
+  .trainer {
+    flex: 0 100%;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
+  /* Making sure that all children of contact info are addected */
+  .contact-info > * {
+    flex: 0 100%;
+  }
+
+  .contact-form {
+    order: 3;
+  }
 }
